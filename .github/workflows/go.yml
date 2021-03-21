@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-  build:
+  build_api:
     defaults:
       run:
         working-directory: api  
