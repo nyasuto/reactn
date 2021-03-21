@@ -7,7 +7,11 @@ on:
   [push]
 
 jobs:
+
   build:
+    defaults:
+      run:
+        working-directory: ui
 
     runs-on: ubuntu-latest
 
