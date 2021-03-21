@@ -6,7 +6,13 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/ui" # Location of package manifests
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "gomod" # See documentation for possible values
+    directory: "/api" # Location of package manifests
     open-pull-requests-limit: 20
     schedule:
       interval: "weekly"
