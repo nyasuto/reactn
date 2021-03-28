@@ -8,6 +8,8 @@ type Index struct {
 	Message string
 }
 
+var unusedValue = 10
+
 func main() {
 	router := gin.Default()
 	router.LoadHTMLGlob("templates/*.html")
