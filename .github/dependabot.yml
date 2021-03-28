@@ -9,13 +9,13 @@ updates:
     directory: "/ui" # Location of package manifests
     open-pull-requests-limit: 20
     schedule:
-      interval: "daily"
+      interval: "weekly"
 
   - package-ecosystem: "gomod" # See documentation for possible values
     directory: "/api" # Location of package manifests
     open-pull-requests-limit: 20
     schedule:
-      interval: "daily"
+      interval: "weekly"
       
   - package-ecosystem: "github-actions"
     directory: "/"
