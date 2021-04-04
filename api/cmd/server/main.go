@@ -1,8 +1,10 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"io/ioutil"
+	"log"
+
+	"github.com/gin-gonic/gin"
 )
 
 type Index struct {
@@ -38,5 +40,8 @@ func main() {
 		//ctx.JSON(200, index)
 	})
 
-	router.Run()
+	err := router.Run()
+	if err != nil{
+		log.Println(err)
+	}
 }
