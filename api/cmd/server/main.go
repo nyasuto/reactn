@@ -34,10 +34,9 @@ func main() {
 			result = append(result, f.Name())
 			// result = append(result, f.Name)
 		}
-		ctx.JSON(200, Index{Files: result})
+		//ctx.JSON(200, Index{Files: result})
+		ctx.HTML(200, "movie.html", gin.H{"movies":result})		
 
-		//index := Index{Message: "Hello world"}
-		//ctx.JSON(200, index)
 	})
 
 	err := router.Run()
