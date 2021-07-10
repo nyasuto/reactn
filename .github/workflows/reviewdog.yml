@@ -24,7 +24,7 @@ jobs:
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
-          exclude: "*.json"
+          # exclude: "*.json"
           locale: "US"
           exclude: "*.html"
           filter_mode: nofilter
