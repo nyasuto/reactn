@@ -26,5 +26,5 @@ jobs:
           reporter: github-pr-review
           # exclude: "*.json"
           locale: "US"
-          exclude: "*.html"
+          exclude: "*.json"
           filter_mode: nofilter
